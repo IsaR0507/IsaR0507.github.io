@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html id="htmlRoot" lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafoliote</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-left"> Isa R.L ✦ </div>
+    <div class="titulo" data-lang="titulo">✦ Mi Portafoliote ✦</div>
+    <nav class="header-btn">
+      <ul class="menu">
+        <li class="nav button"><a href="#contactame" data-lang="navContacto">Contáctame</a></li>
+      </ul>
+    </nav>
+    <button class="lang-toggle" id="langToggle">
+      <span id="langFlag">Esp</span>
+      <span id="langLabel">Eng</span>
+    </button>
+    
+    <button class="lang-toggle" id="themeToggle" style="right: -1rem;">
+      🌙
+    </button>
+
+
+  </header>
+
+  <main>
+
+    <div class="introduction-text" data-lang="intro">
+      Bienvenid@!
+      En este portafolio encontrarás una selección de mis proyectos más destacados en animación, producción audiovisual, videojuegos y fotografía. Cada proyecto refleja mi pasión por contar historias a través de diferentes medios y técnicas.
+      Estos trabajos fueron realizados durante mi formación en la carrera de Comunicación y Entretenimiento Digital, y representan una parte de mi creatividad y habilidades técnicas.
+    </div>
+
+    <div class="Cta-text" data-lang="cta">
+      ¡Explora y descubre mi trabajo! :D
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project-card" data-project="midnight-hunt">
+        <div class="card-bg">
+          <video autoplay muted loop playsinline>
+            <source src="Recursos/Corto Final Midnight Hunt.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat" data-lang="cat-animacion">Animaciones</span>
+          <h3 class="card-title" data-lang="title-midnight">Animación 2D y 3D</h3>
+          <p class="card-sub" data-lang="sub-midnight">Animación 2D · 2025</p>
+        </div>
+        <div class="card-hint" data-lang="verProyecto">Ver proyecto →</div>
+      </div>
+
+      <div class="project-card" data-project="no-cap">
+        <div class="card-bg">
+          <video autoplay muted loop playsinline>
+            <source src="Recursos/NoCapDemuestra.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat" data-lang="cat-audiovisual">Producción Audiovisual</span>
+          <h3 class="card-title" data-lang="title-nocap">Producciones Audiovisuales</h3>
+          <p class="card-sub" data-lang="sub-nocap">VideoClip No Cap · 2025</p>
+        </div>
+        <div class="card-hint" data-lang="verProyecto">Ver proyecto →</div>
+      </div>
+
+      <div class="project-card" data-project="karinas-mad-world">
+        <div class="card-bg">
+          <img src="Recursos/Karina's Mad World.png" alt="Karina´s MadWorld">
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat" data-lang="cat-juegos">Videojuegos</span>
+          <h3 class="card-title" data-lang="title-karina">Videojuegos</h3>
+          <p class="card-sub" data-lang="sub-karina">Videojuego 2D · 2025</p>
+        </div>
+        <div class="card-hint" data-lang="verProyecto">Ver proyecto →</div>
+      </div>
+
+      <div class="project-card" data-project="retratos-luces">
+        <div class="card-bg">
+          <img src="Recursos/FotoEditorial.jpeg" alt="Foto Editorial con Esquema de luces">
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat" data-lang="cat-foto">Fotografía</span>
+          <h3 class="card-title" data-lang="title-retratos">Retratos Con Esquema de Luces</h3>
+          <p class="card-sub" data-lang="sub-retratos">Serie fotográfica · 2026</p>
+        </div>
+        <div class="card-hint" data-lang="verProyecto">Ver proyecto →</div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div>
+      <p class="texto-footer" data-lang="footer1">© 2025 Isa R.L. Todos los derechos reservados para mi jijijji.</p>
+      <p class="texto-footer" data-lang="footer2">Profe luego pongo mi contacto y redes :p</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+
+      <button class="modal-close" id="modalClose">✕</button>
+
+      <div class="modal-header">
+        <span class="modal-cat" id="modalCat"></span>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <p class="modal-sub" id="modalSub"></p>
+      </div>
+
+      <div class="carousel">
+        <button class="carousel-btn carousel-btn--prev" id="prevBtn">&#8592;</button>
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track" id="carouselTrack"></div>
+        </div>
+        <button class="carousel-btn carousel-btn--next" id="nextBtn">&#8594;</button>
+      </div>
+
+      <div class="carousel-dots" id="carouselDots"></div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
